@@ -5,7 +5,7 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.filters.command import Command
 from aiogram import F
 from aiogram.utils.keyboard import InlineKeyboardBuilder, ReplyKeyboardBuilder
-from tuken import keys, path
+from token import keys, path
 
 # Enable logging so you don't miss important messages
 logging.basicConfig(level=logging.INFO)
