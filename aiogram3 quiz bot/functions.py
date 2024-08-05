@@ -11,8 +11,8 @@ from quiz_data import quiz_data
 logging.basicConfig(level=logging.INFO)
 
 # Bot object
-API_TOKEN = keys
-bot = Bot(token=API_TOKEN)
+keys=${{shared.keys}}
+bot = Bot(token=keys)
 # Dispatcher
 dp = Dispatcher()
 
