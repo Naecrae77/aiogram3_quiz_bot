@@ -7,11 +7,11 @@ from aiogram import F
 from aiogram.utils.keyboard import InlineKeyboardBuilder, ReplyKeyboardBuilder
 from quiz_data import quiz_data
 
+
 # Enable logging so you don't miss important messages
 logging.basicConfig(level=logging.INFO)
 
 # Bot object
-keys=${{shared.keys}}
 bot = Bot(token=keys)
 # Dispatcher
 dp = Dispatcher()
