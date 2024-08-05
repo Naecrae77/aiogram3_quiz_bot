@@ -1,6 +1,3 @@
-import json
-path = '/home/sam/Neural networks/Naecrae quiz bot with aiogram3/.venv/aiogram3 quiz bot/data'
-DICT_Data = f'{path}/quiz_data.json' 
 quiz_data = [
     {
         'question': 'Where were fortune cookies invented?',
@@ -55,6 +52,3 @@ quiz_data = [
      'correct_option': 3
     },
 ]
-
-with open(DICT_Data, 'w') as file:
-   quiz_data = json.dump(quiz_data, file)
