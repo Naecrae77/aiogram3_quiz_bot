@@ -5,7 +5,7 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.filters.command import Command
 from aiogram import F
 from aiogram.utils.keyboard import InlineKeyboardBuilder, ReplyKeyboardBuilder
-from token import keys, path
+from quiz_data import quiz_data
 
 # Enable logging so you don't miss important messages
 logging.basicConfig(level=logging.INFO)
@@ -17,10 +17,7 @@ dp = Dispatcher()
 
 # Database name
 DB_NAME = 'quiz_bot.db'
-DICT_Data = f'{path}/quiz_data.json' 
 
-with open(DICT_Data, 'r') as j:
-   quiz_data = json.loads(j.read())
 
 def generate_options_keyboard(answer_options, right_answer):
     # Create an Inline keyboard collector
