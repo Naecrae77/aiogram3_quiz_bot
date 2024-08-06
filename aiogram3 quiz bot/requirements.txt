@@ -2,4 +2,3 @@ aiogram
 asyncio
 aiosqlite
 python-dotenv
-os
