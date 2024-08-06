@@ -113,8 +113,13 @@ async def cmd_start(message: types.Message):
     builder = ReplyKeyboardBuilder()
     # Add one button to the collector
     builder.add(types.KeyboardButton(text="Start Quiz"))
-    # Attach buttons to the message
-    await message.answer("Hi! I'm Naecrae quiz bot. Type /quiz to get started.\nDon't know what to do? type /help", reply_markup=builder.as_markup(resize_keyboard=True, one_time_keyboard=True))
+    url = 'https://telegra.ph/file/63a181ffbab56094ff04a.jpg'
+    await message.bot.send_photo(
+        chat_id=message.chat.id,
+        photo=url,
+        caption=f"Hello {(message.from_user.full_name)}, I'm Naecrae quiz bot. Type /quiz to get started.\nDon't know what to do? type /help",
+        reply_markup=builder.as_markup(resize_keyboard=True, one_time_keyboard=True)
+    )
 
 async def get_question(message, user_id):
 
