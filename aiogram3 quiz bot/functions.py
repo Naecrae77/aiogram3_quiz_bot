@@ -1,17 +1,22 @@
 import aiosqlite
 import logging
 import json
+import os
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters.command import Command
 from aiogram import F
 from aiogram.utils.keyboard import InlineKeyboardBuilder, ReplyKeyboardBuilder
 from quiz_data import quiz_data
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 # Enable logging so you don't miss important messages
 logging.basicConfig(level=logging.INFO)
 
 # Bot object
+keys = os.getenv('keys')
 bot = Bot(token=keys)
 # Dispatcher
 dp = Dispatcher()
