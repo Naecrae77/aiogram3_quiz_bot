@@ -1,3 +1,5 @@
 aiogram
 asyncio
 aiosqlite
+dotenv
+os
