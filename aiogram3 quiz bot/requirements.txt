@@ -1,5 +1,5 @@
 aiogram
 asyncio
 aiosqlite
-dotenv
+python-dotenv
 os
