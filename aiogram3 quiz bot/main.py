@@ -1,5 +1,6 @@
 import asyncio
-from functions import create_table, bot, dp
+from functions import bot, dp
+from create_table import create_table
 
 # Starting the polling process for new updates
 async def main():
