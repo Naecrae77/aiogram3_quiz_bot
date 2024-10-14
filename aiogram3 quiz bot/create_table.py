@@ -1,3 +1,5 @@
+import aiosqlite
+
 async def create_table():
     # Create a connection to the database (if it does not exist, it will be created)
     async with aiosqlite.connect('quiz_bot.db') as db:
